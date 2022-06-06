@@ -9,16 +9,16 @@
         *, *:before, *:after {box-sizing: border-box;}
         body {
           margin: 40px;
-          font-family: 'Open Sans', 'sans-serif';
-          background-color: #fff;
-          color: #444;
+          font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Emoji","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+          background-color: #000;
+          color: #fff;
         }
         h1,
         p {
           margin: 0 0 1em 0;
         }
         .wrapper {
-          max-width: 940px;
+          /* max-width: 940px; */
           margin: 0 20px;
           display: grid;
           grid-gap: 10px;
@@ -31,14 +31,14 @@
         .wrapper {
           display: grid;
           margin: 0 auto;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          grid-auto-rows: minmax(200px, auto);
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+          grid-auto-rows: minmax(400px, auto);
         }
         .panel {
           /* needed for the flex layout*/
           margin-left: 5px;
           margin-right: 5px;
-          flex: 1 1 200px;
+          flex: 1 1 400px;
         }
         .header,
         .footer {
@@ -49,15 +49,17 @@
         }
         .wrapper > * {
           /* background-color: #444; */
-          color: #fff;
+          color: #000;
           border-radius: 5px;
           padding: 20px;
-          font-size: 150%;
+          font-size: .85em;
           margin-bottom: 10px;
+          text-align: center;
         }
         .panel > img {
-          max-width: 200px;
+          width: 100%;
           margin: auto;
+          height: auto;
         }
         /* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
         @supports (display: grid) {
@@ -65,22 +67,27 @@
             margin: 0;
           }
         }
+        img.p {border-radius: 5px;}
     </style>
 </head>
 <body>
 
 <h1>Black Bear Prospect</h1>
-<div class="wrapper">    
+<div class="wrapper">
+    <div class="panel" style="background-color: #ccc;"><img class="p" src="bbp-1-bk-pocket-t.jpg" alt=""></div>
+    <div class="panel" style="background-color: #ccc;"><img class="p" src="bbp-1-bk-t-shirt.jpg" alt=""></div>
     <div class="panel" style="background-color: #3d3c3a;">#3d3c3a<br><img src="bbp-1-bk.png" /></div>
     <div class="panel" style="background-color: #98afc7;">#98afc7<br><img src="bbp-1-bk.png" /></div>
     <div class="panel" style="background-color: #ada96e;">#ada96e<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
-    <div class="panel" style="background-color: #;">#<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #fff380;">#fff380<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #64e986;">#64e986<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #387c44;">#387c44<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #617c58;">#617c58<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #95b9c7;">#95b9c7<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #5c5858;">#5c5858<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #c7a317;">#c7a317<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #c3fdb8;">#c3fdb8<br><img src="bbp-1-bk.png" /></div>
+    <div class="panel" style="background-color: #ccffff;">#ccffff<br><img src="bbp-1-bk.png" /></div>
   </div>
 
 </body>
